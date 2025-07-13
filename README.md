@@ -73,11 +73,31 @@ npm install
 
 # Start the development server
 npx expo start
+
 Project Structure
-pgsql
-Copy
-Edit
-.
+
+├── App.js # Entry point of the app
+├── AppNavigator.js # Navigation configuration
+├── index.js # Registers the root component
+├── package.json # Project dependencies and scripts
+├── components/ # Reusable UI components
+│ ├── AssetExample.js
+│ ├── ArticleList.js
+│ └── CharacterCard.js
+├── context/
+│ └── ArticleContext.js # Global context for articles
+├── screens/
+│ ├── SignupScreen.js # Signup screen for reader/publisher selection
+│ ├── Homescreen.js # Initial landing screen after login
+│ ├── ReaderScreen.js # Reader view with articles and GraphQL characters
+│ ├── PublishScreen.js # Publisher form to add new articles
+│ ├── ManageArticlesScreen.js # Manage/edit publisher's own articles
+│ ├── FeedbackScreen.js # Readers rate articles with stars
+│ ├── SearchScreen.js # Search articles by title, author, or category
+│ ├── GraphQL.js # GraphQL data fetch for Rick and Morty
+│ └── CharactersScreen.js # UI to display fetched GraphQL characters
+├── assets/ # App images and fonts
+├── app.json # App configuration for Expo.
 ├── App.js
 ├── AppNavigator.js
 ├── index.js
@@ -87,6 +107,7 @@ Edit
 ├── screens/
 ├── assets/
 ├── app.json
+
 Technologies Used
 React Native with Expo
 
